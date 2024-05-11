@@ -1,0 +1,181 @@
+/* Custom styles for the App component */
+.main-card {
+    
+    display: flex; /* Use flex display */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 300px; /* Set a minimum height to center vertically */
+}
+
+.custom-card {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 400px;
+    display: flex; /* Use flex display */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 300px; /* Set a minimum height to center vertically */
+}
+
+.inner-custom-card {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding-top: 20px;
+    border-radius: 8px;
+    display: flex; /* Use flex display */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 200px; /* Set a minimum height to center vertically */
+}
+
+
+
+
+
+.custom-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.custom-subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.custom-input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.custom-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+.custom-list-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    min-width: 450px;
+}
+
+.custom-highlighted {
+    border-color: #4caf50;
+}
+
+.custom-link {
+    cursor: pointer;
+}
+
+.custom-highlighted-text {
+    color: #4caf50;
+}
+
+.custom-add-fields {
+    margin-top: 2rem;
+}
+
+.custom-table {
+    margin-top: 1rem;
+    border: 1px solid #000000;
+    min-width: 300px;
+    
+}
+table, th, td {
+    border: 1px solid;
+    min-width: 150px;
+  }
+
+.custom-delete-button {
+    background-color: #d82721;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.custom-delete-button:hover {
+    background-color: #c9302c;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.status-button {
+    margin-top: 50px;
+    padding-top: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.status-table {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   font-size: medium;
+    border-radius: 8px;
+    line-height: normal;
+    min-height: 20px;
+    display: flex; /* Use flex display */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+ /* Set a minimum height to center vertically */
+}
+
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: absolute;
+    top:50%;
+    left: 50%;
+    height: 100vh;
+    margin: 0; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
