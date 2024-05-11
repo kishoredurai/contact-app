@@ -7,13 +7,19 @@ services:
       dockerfile: Dockerfile
     ports:
       - 80:80
+    networks:
+      - backend
       
   frontend:
     build: 
       context: ./frontend
       dockerfile: Dockerfile
+    ports:
+      - 3001:300
     volumes:
       - ./frontend:/app
+    networks:
+      - backend
   
   api:
     build: 
@@ -23,6 +29,8 @@ services:
       - 5001:5000
     volumes:
       - ./api:/app
+    networks:
+      - backend
 
   db:
     image: postgres:15.3-alpine3.18
@@ -32,3 +40,14 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+
+networks:
+  backend:
+
+volumes:
+  db-data:
